@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Slider Application</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Market Buy/Sell Orders Slider</h1>
+    <!-- Slider to select instruments -->
+    <input type="range" id="instrument-slider" min="0" max="2" step="1" value="0">
+    <div id="instrument-label">EUR/USD</div>
+
+    <!-- Container for buy/sell data -->
+    <div id="order-book">
+        <div class="order-book-section">
+            <h2>Buy Rates</h2>
+            <ul id="buy-orders"></ul>
+        </div>
+        <div class="order-book-section">
+            <h2>Sell Rates</h2>
+            <ul id="sell-orders"></ul>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
